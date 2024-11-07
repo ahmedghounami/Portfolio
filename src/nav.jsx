@@ -1,6 +1,6 @@
 export default function Nav() {
   return (
-    <div className="relative bg-[#231e1e] text-[white] flex gap-40 pl-20 items-center">
+    <div className="fixed bg-[#231e1e] text-[white] flex gap-40 pl-20 items-center w-full">
       <div>
         <h1 className="font-mono text-2xl tracking-[0.3rem]">Ahmed</h1>
         <div className="border-[0.2rem] border-[#4d2491] absolute h-[80%] left-[3.7rem] top-2 w-10"></div>

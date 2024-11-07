@@ -1,6 +1,6 @@
 export default function Container({ children }) {
   return (
-    <div className="flex flex-col h-[100vh] bg-[white] ml-40 mr-40">
+    <div className="flex flex-col ml-40 mr-40 mt-14">
       {children}
     </div>
   );
