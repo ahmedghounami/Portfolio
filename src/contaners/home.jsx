@@ -13,7 +13,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex gap-4" data-aos="zoom-in">
+    <div className="flex gap-4" data-aos="fade-down">
       <div className="flex flex-col text-[white]">
         <p className="text-[#3b0e87] text-[3rem] font-bold"> Hello, I am</p>
         <p className="text-outline text-white text-[3rem] font-bold">
@@ -50,7 +50,7 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <img src={Profile} alt="picture" width={400}/>
+        <img src={Profile} alt="picture" width={400} />
       </div>
     </div>
   );

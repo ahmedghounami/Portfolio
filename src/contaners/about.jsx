@@ -1,10 +1,12 @@
 import projects from "../assets/projects.png";
 import Profile from "../assets/person.jpg";
 import exp from "../assets/exp.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function About() {
   return (
-    <div className="flex gap-[6rem] text-[white] relative">
+    <div className="flex gap-[6rem] text-[white] relative" data-aos="fade-up">
       <div>
         <img src={Profile} alt="picture" className="w-[28rem] h-[35rem]" />
       </div>
