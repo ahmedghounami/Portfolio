@@ -4,6 +4,7 @@ import Nav from "./contaners/nav.jsx";
 import Conteaner from "./contaners/container.jsx";
 import Home from "./contaners/home.jsx";
 import About from "./contaners/about.jsx";
+import Biography from "./contaners/biography.jsx";
 
 export default function App() {
   return (
@@ -12,9 +13,7 @@ export default function App() {
       <Conteaner>
         <Home/>
         < About />
-        < About />
-        < About />
-        < About />
+        < Biography />
       </Conteaner>
     </div>
   );
