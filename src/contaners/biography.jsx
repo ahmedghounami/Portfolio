@@ -5,7 +5,6 @@ export default function Biography() {
   return (
     <div
       className="flex flex-col gap-[2rem] text-[white] justify-center relative"
-      data-aos="zoom-in"
     >
       <h1 className="font-extrabold text-[4rem] text-center text-[#7e4aff]">
         My Biography

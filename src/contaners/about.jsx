@@ -12,7 +12,7 @@ export default function About() {
       </div>
       <div className="flex flex-col gap-4 text-[white]">
         <h1 className="font-extrabold text-[1rem] ">About Me</h1>
-        <p className="font-extrabold text-[2rem] text-[#350C7B]">
+        <p className="font-extrabold text-[2rem] text-[#6641c4]">
           Student at 1337 School, <br></br> I am a Full Stack Web Developer.
           <br></br>
         </p>
