@@ -2,6 +2,9 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect } from "react";
 import Profile from "../assets/person.jpg";
+
+import { MeteorsDemo } from "../components/button/mouvebutton/mouveComponent";
+
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
@@ -13,8 +16,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex gap-4 " data-aos="fade-down">
-      <div className="flex flex-col text-[white]">
+    <div className="flex gap-4 justify-between" data-aos="fade-down">
+      {/* <div className="flex flex-col text-[white]">
         <p className="text-[#5f39be] text-[3rem] font-bold"> Hello, I am</p>
         <p className="text-outline text-white text-[3rem] font-bold">
           {" "}
@@ -48,7 +51,8 @@ export default function Home() {
             Know More
           </button>
         </div>
-      </div>
+      </div> */}
+      <MeteorsDemo />
       <div>
         <img src={Profile} alt="picture" width={400} />
       </div>

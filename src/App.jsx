@@ -8,11 +8,14 @@ import Biography from "./contaners/biography.jsx";
 import Skills from "./contaners/skills.jsx";
 import Projects from "./contaners/projects.jsx";
 
+import { MeteorsDemo } from "./components/button/mouvebutton/mouveComponent";
+
 export default function App() {
   return (
-    <div className="relative w-[100%] h-[100vh] bg-[#060101] flex flex-col items-center  overflow-scroll ">
+<div className="relative w-[100%] h-[100vh] bg-gradient-to-b from-black to-[#240541] flex flex-col items-center overflow-scroll">
       <Nav />
       <Conteaner>
+        
         <Home/>
         < About />
         < Biography />

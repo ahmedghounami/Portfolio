@@ -1,0 +1,48 @@
+import React from "react";
+import { Meteors } from "../mouvebutton/mouvebutton";
+
+import "../../../global.css";
+
+export function MeteorsDemo() {
+  return (
+    <div className="">
+      <div className="w-full relative max-w-[40em]">
+        <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+        <div className="relative shadow-xl bg-[#080010]  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+          <Meteors number={50} />
+          <div className="flex flex-col text-[white] mt-10">
+            <p className="text-[#5f39be] text-[3rem] font-bold">Hello, I am</p>
+            <p className="text-outline text-white text-[3rem] font-bold">
+              Ahmed Ghounami, an
+            </p>
+            <p className="text-white text-[2rem] font-bold">
+              Aspiring Web Developer.
+            </p>
+            <p className="text-[white] pt-10 font-extralight">
+              Experienced in web development with a strong command of both
+              front-end and back-end technologies. Skilled in modern frameworks
+              like React and Node.js, creating responsive, high-performance
+              applications. Dedicated to writing clean, scalable code and
+              continuously enhancing user experience through effective,
+              innovative solutions.
+            </p>
+            <div className="flex gap-4 mt-6">
+              <button
+                className="text-sm bg-[#174882] p-2 pl-4 pr-4 rounded-[0.3rem] text-white"
+                onClick={() =>
+                  (window.location.href =
+                    "mailto:ahmedghounami0@gmail.com?subject=Contact Request")
+                }
+              >
+                Contact Me
+              </button>
+              <button className="text-sm border border-[white] p-2 pl-4 pr-4 rounded-[0.3rem] text-white">
+                Know More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
