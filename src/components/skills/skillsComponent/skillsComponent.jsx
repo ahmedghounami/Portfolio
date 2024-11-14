@@ -80,27 +80,27 @@ const Skeleton = () => {
   }, []);
   return (
     <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
-      <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
-        <Container className="h-8 w-8 circle-1">
-          <CLogo className="h-8 w-8 " />
-        </Container>
-        <Container className="h-12 w-12 circle-2">
-          <CPPLogo className="h-4 w-4 " />
+      <div className="flex flex-row flex-shrink-0 justify-center items-center gap-6">
+        <Container className="h-12 w-12 circle-1">
+          <JavaScriptLogo className="h-6 w-6 " />
         </Container>
         <Container className="h-16 w-16 circle-2">
-          <HTMLLogo className="h-8 w-8 " />
+          <CLogo className="h-8 w-8 " />
         </Container>
-        <Container className="h-20 w-20 circle-4">
+        <Container className="h-20 w-20 circle-3">
+          <HTMLLogo className="h-10 w-10 " />
+        </Container>
+        <Container className="h-24 w-24 circle-4">
           <ReactLogo className="h-12 w-12 dark:text-white" />
         </Container>
-        <Container className="h-16 w-16 circle-5">
-          <CSSLogo className="h-12 w-12 dark:text-white" />
+        <Container className="h-20 w-20 circle-5">
+          <CSSLogo className="h-10 w-10 dark:text-white" />
         </Container>
-        <Container className="h-12 w-12 circle-6">
-          <JavaScriptLogo className="h-12 w-12 " />
+        <Container className="h-16 w-16 circle-6">
+          <CPPLogo className="h-8 w-8 " />
         </Container>
-        <Container className="h-8 w-8 circle-7">
-          <TAILWINDCSSLogo className="h-4 w-4 " />
+        <Container className="h-12 w-12 circle-7">
+          <TAILWINDCSSLogo className="h-6 w-6 " />
         </Container>
       </div>
       <div className="h-40 w-px absolute top-20 m-auto z-40 bg-gradient-to-b from-transparent via-cyan-500 to-transparent animate-move">
@@ -117,7 +117,7 @@ const Sparkles = () => {
   const random = () => Math.random();
   return (
     <div className="absolute inset-0">
-      {[...Array(12)].map((_, i) => (
+      {[...Array(30)].map((_, i) => (
         <motion.span
           key={`star-${i}`}
           animate={{
@@ -151,7 +151,7 @@ export const Card = ({ className, children }) => {
   return (
     <div
       className={cn(
-        "w-full mx-auto p-8 rounded-xl border border-[rgba(255,255,255,0.10)] bg-gradient-to-b from-black to-[#240541]  group",
+        "w-full mx-auto p-8 rounded-xl border border-[rgba(255,255,255,0.10)] bg-gradient-to-b from-black to-[#150722]  group",
         className
       )}
     >
@@ -196,7 +196,7 @@ export const CardSkeletonContainer = ({
       className={cn(
         "h-[15rem] md:h-[20rem] rounded-xl z-40",
         className,
-        showGradient && "bg-gradient-to-b from-[black] to-[#4b53b0] "
+        showGradient && "bg-gradient-to-b from-[black] to-[#8e95e5] "
       )}
     >
       {children}
@@ -417,11 +417,11 @@ const CPPLogo = () => (
     viewBox="0 0 109.19 122.88"
     xmlSpace="preserve"
   >
-    <style type="text/css">
+     <style type="text/css">
       {`
-        .st0 { fill-rule:evenodd; clip-rule:evenodd; fill:#00599C; }
-        .st1 { fill-rule:evenodd; clip-rule:evenodd; fill:#004482; }
-        .st2 { fill-rule:evenodd; clip-rule:evenodd; fill:#659AD2; }
+        .st0 { fill-rule:evenodd; clip-rule:evenodd; fill:#3949AB; }
+        .st1 { fill-rule:evenodd; clip-rule:evenodd; fill:#283593; }
+        .st2 { fill-rule:evenodd; clip-rule:evenodd; fill:#5C6BC0; }
         .st3 { fill-rule:evenodd; clip-rule:evenodd; fill:#FFFFFF; }
       `}
     </style>

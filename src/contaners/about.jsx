@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 
 export default function About() {
   return (
-    <div className="flex gap-[6rem] text-[white] relative" data-aos="fade-up">
+    <div className="flex gap-[6rem] text-[white] relative" >
       <div>
         <img src={Profile} alt="picture" className="w-[28rem] h-[35rem]" />
       </div>

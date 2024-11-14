@@ -5,9 +5,9 @@ import { PinContainer } from "../3d-pin/3d-pin";
 export function AnimatedPinDemo({ pic, destination, title, description }) {
   return (
     <div className="h-[40rem] w-full flex items-center justify-center">
-      <PinContainer title="/ui.aceternity.com" href={destination}>
-        <div className="flex basis-full bg-[#170744] flex-col p-2 tracking-tight text-slate-100/50 sm:basis-1/2 w-[24rem] h-[28rem]">
-          <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100 text-center">
+      <PinContainer title={destination}href={destination}>
+        <div className="flex basis-full items-center bg-[#170744] flex-col p-2 tracking-tight text-slate-100/50 sm:basis-1/2 w-[24rem] h-[28rem]">
+          <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
             {title}
           </h3>
           <div className="text-base !m-0 !p-0 font-normal">

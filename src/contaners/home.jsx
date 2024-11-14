@@ -16,42 +16,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex gap-4 justify-between" data-aos="fade-down">
-      {/* <div className="flex flex-col text-[white]">
-        <p className="text-[#5f39be] text-[3rem] font-bold"> Hello, I am</p>
-        <p className="text-outline text-white text-[3rem] font-bold">
-          {" "}
-          Ahmed Goounami an
-        </p>
-        <p className="text-white text-[2rem] font-bold">
-          {" "}
-          Aspiring Web Developer.
-        </p>
-        <p className="text-[white] pt-10 font-extralight">
-          Experienced in web development with a strong command of both <br></br>
-          front-end and back-end technologies. Skilled in modern frameworks
-          <br></br>
-          like React and Node.js, creating responsive, high-performance
-          <br></br>
-          applications. Dedicated to writing clean, scalable code and <br></br>F
-          continuously enhancing user experience through effective, innovative
-          solutions.
-        </p>
-        <div className="flex gap-4 mt-6">
-          <button
-            className=" text-sm bg-[#174882] p-2 pl-4 pr-4 rounded-[0.3rem] text-white"
-            onClick={() =>
-              (window.location.href =
-                "mailto:ahmedghounami0@gmail.com?subject=Contact Request")
-            }
-          >
-            Contact Me
-          </button>
-          <button className="text-sm border border-[white] p-2 pl-4 pr-4 rounded-[0.3rem] text-white">
-            Know More
-          </button>
-        </div>
-      </div> */}
+    <div className="flex gap-4 justify-between" >
       <MeteorsDemo />
       <div>
         <img src={Profile} alt="picture" width={400} />

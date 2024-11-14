@@ -2,7 +2,7 @@ import React from "react";
 import { Meteors } from "../mouvebutton/mouvebutton";
 
 import "../../../global.css";
-
+import { MovingBorderDemo } from "../../../components/mouving/mouving-comp/mouving-Comp.jsx";
 export function MeteorsDemo() {
   return (
     <div className="">
@@ -27,18 +27,8 @@ export function MeteorsDemo() {
               innovative solutions.
             </p>
             <div className="flex gap-4 mt-6">
-              <button
-                className="text-sm bg-[#174882] p-2 pl-4 pr-4 rounded-[0.3rem] text-white"
-                onClick={() =>
-                  (window.location.href =
-                    "mailto:ahmedghounami0@gmail.com?subject=Contact Request")
-                }
-              >
-                Contact Me
-              </button>
-              <button className="text-sm border border-[white] p-2 pl-4 pr-4 rounded-[0.3rem] text-white">
-                Know More
-              </button>
+              <MovingBorderDemo content={"Contact Me"} flag={1}/>
+              <MovingBorderDemo content={"Know More"} flag={0}/>
             </div>
           </div>
         </div>
