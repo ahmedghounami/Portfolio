@@ -35,7 +35,7 @@ const Skeleton = () => {
         scale,
         transform,
       },
-      { duration: 0.8 },
+      { duration: 1 },
     ],
     [
       ".circle-2",
@@ -43,7 +43,7 @@ const Skeleton = () => {
         scale,
         transform,
       },
-      { duration: 0.8 },
+      { duration: 1 },
     ],
     [
       ".circle-3",
@@ -51,7 +51,7 @@ const Skeleton = () => {
         scale,
         transform,
       },
-      { duration: 0.8 },
+      { duration: 1 },
     ],
     [
       ".circle-4",
@@ -59,7 +59,7 @@ const Skeleton = () => {
         scale,
         transform,
       },
-      { duration: 0.8 },
+      { duration: 1 },
     ],
     [
       ".circle-5",
@@ -67,7 +67,7 @@ const Skeleton = () => {
         scale,
         transform,
       },
-      { duration: 0.8 },
+      { duration: 1 },
     ],
   ];
 
@@ -84,8 +84,8 @@ const Skeleton = () => {
         <Container className="h-12 w-12 circle-1">
           <JavaScriptLogo className="h-6 w-6 " />
         </Container>
-        <Container className="h-16 w-16 circle-2">
-          <CLogo className="h-8 w-8 " />
+        <Container className="h-16 w-16 circle-6">
+          <CPPLogo className="h-8 w-8 " />
         </Container>
         <Container className="h-20 w-20 circle-3">
           <HTMLLogo className="h-10 w-10 " />
@@ -96,8 +96,8 @@ const Skeleton = () => {
         <Container className="h-20 w-20 circle-5">
           <CSSLogo className="h-10 w-10 dark:text-white" />
         </Container>
-        <Container className="h-16 w-16 circle-6">
-          <CPPLogo className="h-8 w-8 " />
+        <Container className="h-16 w-16 circle-2">
+          <CLogo className="h-8 w-8 " />
         </Container>
         <Container className="h-12 w-12 circle-7">
           <TAILWINDCSSLogo className="h-6 w-6 " />

@@ -3,10 +3,20 @@ import Profile from "../assets/person.jpg";
 import exp from "../assets/exp.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <div className="flex gap-[6rem] text-[white] relative" >
+    <motion.div
+      initial={{ opacity: 0.5, x: -200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{
+        delay: 0.3,
+        duration: 1,
+        ease: "easeInOut",
+      }}
+      className="flex gap-[6rem] text-[white] relative"
+    >
       <div>
         <img src={Profile} alt="picture" className="w-[28rem] h-[35rem]" />
       </div>
@@ -44,6 +54,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

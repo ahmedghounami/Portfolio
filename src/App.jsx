@@ -7,6 +7,7 @@ import About from "./contaners/about.jsx";
 import Biography from "./contaners/biography.jsx";
 import Skills from "./contaners/skills.jsx";
 import Projects from "./contaners/projects.jsx";
+import Progress from "./contaners/progress.jsx";
 
 import {LampDemo} from "./components/header/header-Comp/header-Comp.jsx";
 
@@ -21,6 +22,7 @@ export default function App() {
         < Biography />
         < Skills />
         < Projects />
+        < Progress />
       </Conteaner>
     </div>
   );

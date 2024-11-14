@@ -1,9 +1,17 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { motion } from "framer-motion";
 
 export default function Biography() {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0.5, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        delay: 0.3,
+        duration: 1,
+        ease: "easeInOut",
+      }}
       className="flex flex-col gap-[2rem] text-[white] justify-center relative"
     >
       <h1 className="font-extrabold text-[4rem] text-center text-[#7e4aff]">
@@ -44,6 +52,6 @@ export default function Biography() {
           </ul>
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 }

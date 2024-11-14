@@ -1,12 +1,18 @@
 import Badge from "./badge.jsx";
 import skills from "../assets/skills.png";
 import Aos from "aos";
-import "aos/dist/aos.css";
+import { motion } from "framer-motion";
 import { CardDemo } from "../components/skills/skillsComponent/skillsComponent.jsx";
 
 export default function Skills() {
   return (
-    <div className="flex flex-col text-white ">
+    <motion.div initial={{ opacity: 0.5, x: 150 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{
+      delay: 0.3,
+      duration: 1,
+      ease: "easeInOut",
+    }} className="flex flex-col text-white ">
       <h1 className="font-extrabold text-[3rem] text-center text-[#7e4aff]">
         My Skills
       </h1>
@@ -15,6 +21,6 @@ export default function Skills() {
         All the skils that i have learned and i'm still learning
       </p>
       <CardDemo />
-    </div>
+    </motion.div>
   );
 }

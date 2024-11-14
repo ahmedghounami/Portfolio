@@ -4,8 +4,7 @@ import React, { useEffect } from "react";
 import Profile from "../assets/person.jpg";
 
 import { MeteorsDemo } from "../components/button/mouvebutton/mouveComponent";
-
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import { motion } from "framer-motion";
 
 export default function Home() {
   useEffect(() => {
@@ -16,11 +15,19 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex gap-4 justify-between" >
+    <motion.div 
+    initial={{ opacity: 0.5, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 1,
+          ease: "easeInOut",
+        }}
+    className="flex gap-4 justify-between" >
       <MeteorsDemo />
       <div>
         <img src={Profile} alt="picture" width={400} />
       </div>
-    </div>
+    </motion.div>
   );
 }

@@ -4,12 +4,22 @@ import Binary from "../assets/binary.gif";
 
 import Cub from "../assets/cub.png";
 import Mini from "../assets/mini.png";
+import { motion } from "framer-motion";
 
 export default function Projects() {
   return (
-    <div className="flex flex-col   text-[white] justify-center relative ">
-      <h1 className="z-40 -mb-10 font-extrabold text-[3rem] text-center text-[#7e4aff]">
-        My Projects
+    <motion.div
+      initial={{ opacity: 0.5, x: -150 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{
+        delay: 0.3,
+        duration: 1,
+        ease: "easeInOut",
+      }}
+      className="flex flex-col   text-[white] justify-center relative "
+    >
+      <h1 className="z-40 -mb-10 font-extrabold text-[2rem] text-center text-[#7e4aff]">
+        My spotlight projects in 42 network school 🚀
       </h1>
       <div className="flex gap-6 justify-between relative">
         {/* <ThreeDCardDemo pic={Cub} />
@@ -28,6 +38,6 @@ export default function Projects() {
         />
         {/* <img src={Binary} alt="cub" className="absolute top-0 left-0 w-full h-full" /> */}
       </div>
-    </div>
+    </motion.div>
   );
 }
