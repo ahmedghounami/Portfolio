@@ -8,7 +8,6 @@ import Biography from "./contaners/biography.jsx";
 import Skills from "./contaners/skills.jsx";
 import Projects from "./contaners/projects.jsx";
 
-import { MeteorsDemo } from "./components/button/mouvebutton/mouveComponent";
 
 export default function App() {
   return (
