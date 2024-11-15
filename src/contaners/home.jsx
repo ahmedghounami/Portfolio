@@ -15,19 +15,17 @@ export default function Home() {
   }, []);
 
   return (
-    <motion.div 
-    initial={{ opacity: 0.5, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-          duration: 1,
-          ease: "easeInOut",
-        }}
-    className="flex gap-4 justify-between" >
+    <motion.div
+      initial={{ opacity: 0.5, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        delay: 0.3,
+        duration: 1,
+        ease: "easeInOut",
+      }}
+      className="text-center flex justify-center items-center"
+    >
       <MeteorsDemo />
-      <div>
-        <img src={Profile} alt="picture" width={400} />
-      </div>
     </motion.div>
   );
 }

@@ -80,24 +80,24 @@ const Skeleton = () => {
   }, []);
   return (
     <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
-      <div className="flex flex-row flex-shrink-0 justify-center items-center gap-6">
-        <Container className="h-12 w-12 circle-1">
-          <JavaScriptLogo className="h-6 w-6 " />
+      <div className="flex flex-wrap justify-center items-center gap-6">
+        <Container className="h-8 w-8 circle-1">
+          <JavaScriptLogo className="h-4 w-4 " />
         </Container>
-        <Container className="h-16 w-16 circle-6">
-          <CPPLogo className="h-8 w-8 " />
+        <Container className="h-12 w-12 circle-6">
+          <CPPLogo className="h-6 w-6 " />
         </Container>
-        <Container className="h-20 w-20 circle-3">
-          <HTMLLogo className="h-10 w-10 " />
+        <Container className="h-16 w-16 circle-3">
+          <HTMLLogo className="h-8 w-8 " />
         </Container>
-        <Container className="h-24 w-24 circle-4">
-          <ReactLogo className="h-12 w-12 dark:text-white" />
+        <Container className="h-20 w-20 circle-4">
+          <ReactLogo className="h-10 w-10 dark:text-white" />
         </Container>
-        <Container className="h-20 w-20 circle-5">
-          <CSSLogo className="h-10 w-10 dark:text-white" />
+        <Container className="h-16 w-16 circle-5">
+          <CSSLogo className="h-8 w-8 dark:text-white" />
         </Container>
-        <Container className="h-16 w-16 circle-2">
-          <CLogo className="h-8 w-8 " />
+        <Container className="h-12 w-12 circle-2">
+          <CLogo className="h-6 w-6 " />
         </Container>
         <Container className="h-12 w-12 circle-7">
           <TAILWINDCSSLogo className="h-6 w-6 " />
@@ -417,7 +417,7 @@ const CPPLogo = () => (
     viewBox="0 0 109.19 122.88"
     xmlSpace="preserve"
   >
-     <style type="text/css">
+    <style type="text/css">
       {`
         .st0 { fill-rule:evenodd; clip-rule:evenodd; fill:#3949AB; }
         .st1 { fill-rule:evenodd; clip-rule:evenodd; fill:#283593; }
@@ -472,4 +472,8 @@ const TAILWINDCSSLogo = () => (
   </svg>
 );
 
-export default TAILWINDCSSLogo;
+const GithubLogo = () => (
+  <ion-icon class="text-white w-[2rem]" name="logo-github"></ion-icon>
+);
+
+export default GithubLogo;

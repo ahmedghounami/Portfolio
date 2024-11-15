@@ -15,7 +15,7 @@ export default function About() {
         duration: 1,
         ease: "easeInOut",
       }}
-      className="flex gap-[6rem] text-[white] relative"
+      className="flex gap-[6rem] items-center text-[white] relative flex-col sm:flex-col md:flex-col lg:flex-row"
     >
       <div>
         <img src={Profile} alt="picture" className="w-[28rem] h-[35rem]" />

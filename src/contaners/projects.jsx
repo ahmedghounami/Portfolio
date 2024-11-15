@@ -21,7 +21,7 @@ export default function Projects() {
       <h1 className="z-40 -mb-10 font-extrabold text-[2rem] text-center text-[#7e4aff]">
         My spotlight projects in 42 network school 🚀
       </h1>
-      <div className="flex gap-6 justify-between relative">
+      <div className="flex gap-6 justify-between relative flex-col sm:flex-col md:flex-col lg:flex-row">
         {/* <ThreeDCardDemo pic={Cub} />
         <ThreeDCardDemo pic={Mini} /> */}
         <AnimatedPinDemo

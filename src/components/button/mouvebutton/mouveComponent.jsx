@@ -26,7 +26,7 @@ export function MeteorsDemo() {
               continuously enhancing user experience through effective,
               innovative solutions.
             </p>
-            <div className="flex gap-4 mt-6">
+            <div className="flex gap-4 mt-6 justify-center">
               <MovingBorderDemo content={"Contact Me"} flag={1}/>
               <MovingBorderDemo content={"Know More"} flag={0}/>
             </div>

@@ -8,21 +8,47 @@ import Biography from "./contaners/biography.jsx";
 import Skills from "./contaners/skills.jsx";
 import Projects from "./contaners/projects.jsx";
 import Progress from "./contaners/progress.jsx";
-
-import {LampDemo} from "./components/header/header-Comp/header-Comp.jsx";
+import { useRef } from "react";
+import { LampDemo } from "./components/header/header-Comp/header-Comp.jsx";
+import { GridBackgroundDemo } from "./components/background/background-Comp/background-Comp.jsx";
+import Github from "./components/skills/skillsComponent/skillsComponent.jsx";
 
 export default function App() {
+  const containerRef = useRef(null);
   return (
-<div className="relative w-[100%] h-[100vh] bg-gradient-to-b from-black to-[#240541] flex flex-col items-center overflow-scroll">
-      <Nav />
+    <div
+      ref={containerRef}
+      className="relative w-[100%] h-[100vh] bg-gradient-to-b from-black to-[#240541] flex flex-col items-center overflow-scroll"
+    >
+      <Nav containerRef={containerRef} />
+      <GridBackgroundDemo />
       <Conteaner>
-        <LampDemo/>
-        <Home/>
-        < About />
-        < Biography />
-        < Skills />
-        < Projects />
-        < Progress />
+        <LampDemo />
+        <Home />
+        <About />
+        <Skills />
+        <Progress />
+        <Projects />
+        <Biography />
+        <div className="flex justify-between mt-[10rem] mb-[1rem]">
+          <p className="text-[#f5f5f5] text-center text-sm ">
+            &copy; 2024, developed by Ahmed Ghounami.
+          </p>
+          <div className="flex gap-2">
+            <a href="https://www.github.com/aghounami">
+              <ion-icon
+                class=" border pt-2 pb-2 rounded-[0.6rem] text-white w-[2rem]"
+                name="logo-github"
+              ></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/ahmed-ghounami-a675b1294/">
+              <ion-icon
+                class=" border pt-2 pb-2 rounded-[0.6rem] text-white w-[2rem]"
+                name="logo-linkedin"
+              ></ion-icon>
+            </a>
+          </div>
+        </div>
       </Conteaner>
     </div>
   );
