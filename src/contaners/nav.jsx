@@ -46,19 +46,13 @@ export default function Nav({ containerRef }) {
   }, [containerRef]);
 
   return (
-    <div className="fixed overflow-hidden border border-[white] z-50 bg-[#000000] text-[white] top-[1rem] flex gap-10 pl-20 p-2 items-center rounded-[3rem] w-[60%]">
-      <div>
-        <h1 className="font-mono text-2xl -ml-[3rem] tracking-[0.3rem]">
-          Ahmed
-        </h1>
-        <div className="border-[0.2rem] border-[#4d2491] absolute h-[80%] left-[0.7rem] top-2 w-10"></div>
-      </div>
-      <div className="flex flex-1 justify-between">
+    <div className="fixed top-0 left-0 w-screen bg-white shadow-md z-50 p-2">
+      <div className="flex justify-between items-center">
         <a
           href="#"
           className={`${
-            show === 1 ? "underline" : ""
-          }  pb-2 pt-2 text-center transition-all duration-500`}
+            show === 1 ? "underline text-yellow-500" : ""
+          } pb-2 pt-2 text-center transition-all duration-500`}
           onClick={() => {
             containerRef.current.scrollTo({
               top: 500,
@@ -72,8 +66,8 @@ export default function Nav({ containerRef }) {
         <a
           href="#"
           className={`${
-            show === 2 ? "underline" : ""
-          }  pb-2 pt-2 text-center transition-all duration-500`}
+            show === 2 ? "underline text-yellow-500" : ""
+          } pb-2 pt-2 text-center transition-all duration-500`}
           onClick={() => {
             containerRef.current.scrollTo({
               top: 1200,
@@ -87,8 +81,8 @@ export default function Nav({ containerRef }) {
         <a
           href="#"
           className={`${
-            show === 3 ? "underline" : ""
-          }  pb-2 pt-2 text-center transition-all duration-500`}
+            show === 3 ? "underline text-yellow-500" : ""
+          } pb-2 pt-2 text-center transition-all duration-500`}
           onClick={() => {
             containerRef.current.scrollTo({
               top: 1800,
@@ -102,8 +96,8 @@ export default function Nav({ containerRef }) {
         <a
           href="#"
           className={`${
-            show === 4 ? "underline" : ""
-          }  pb-2 pt-2 text-center transition-all duration-500`}
+            show === 4 ? "underline text-yellow-500" : ""
+          } pb-2 pt-2 text-center transition-all duration-500`}
           onClick={() => {
             containerRef.current.scrollTo({
               top: 2500,
@@ -117,8 +111,8 @@ export default function Nav({ containerRef }) {
         <a
           href="#"
           className={`${
-            show === 5 ? "underline" : ""
-          }  pb-2 pt-2 text-center transition-all duration-500`}
+            show === 5 ? "underline text-yellow-500" : ""
+          } pb-2 pt-2 text-center transition-all duration-500`}
           onClick={() => {
             containerRef.current.scrollTo({
               top: 3000,
@@ -132,8 +126,8 @@ export default function Nav({ containerRef }) {
         <a
           href="#"
           className={`${
-            show === 6 ? "underline" : ""
-          }  pb-2 pt-2 text-center transition-all duration-500`}
+            show === 6 ? "underline text-yellow-500" : ""
+          } pb-2 pt-2 text-center transition-all duration-500`}
           onClick={() => {
             containerRef.current.scrollTo({
               top: 4400,
