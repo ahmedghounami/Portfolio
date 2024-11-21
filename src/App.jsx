@@ -18,7 +18,7 @@ export default function App() {
   return (
     <div
       ref={containerRef}
-      className="relative w-screen h-[100vh] bg-gradient-to-b from-black to-[#240541] flex flex-col items-center overflow-scroll"
+      className="relative w-screen h-[100vh] bg-gradient-to-b from-black to-[#240541] flex flex-col items-center overflow-y-scroll overflow-x-hidden"
     >
       <Nav containerRef={containerRef} />
       {/* <GridBackgroundDemo /> */}
