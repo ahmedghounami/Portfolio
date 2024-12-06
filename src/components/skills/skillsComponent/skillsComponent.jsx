@@ -338,28 +338,28 @@ export const MetaIconOutline = ({ className }) => {
 const JavaScriptLogo = () => (
   <ion-icon
     name="logo-nodejs"
-    className="w-[100px] h-[100px] text-[#c1ff3a]"
+    class="w-[100px] h-[100px] text-[#c1ff3a]"
   ></ion-icon>
 );
 
 const HTMLLogo = () => (
   <ion-icon
     name="logo-html5"
-    className="w-[100px] h-[100px] text-[#d85f37]"
+    class="w-[100px] h-[100px] text-[#d85f37]"
   ></ion-icon>
 );
 
 const CSSLogo = () => (
   <ion-icon
     name="logo-css3"
-    className="w-[100px] h-[100px] text-[#32bcde]"
+    class="w-[100px] h-[100px] text-[#32bcde]"
   ></ion-icon>
 );
 
 const ReactLogo = () => (
   <ion-icon
     name="logo-react"
-    className="w-[100px] h-[100px] text-[#2965f1]"
+    class="w-[100px] h-[100px] text-[#2965f1]"
   ></ion-icon>
 );
 
@@ -468,7 +468,7 @@ const TAILWINDCSSLogo = () => (
 );
 
 const GithubLogo = () => (
-  <ion-icon className="text-white w-[2rem]" name="logo-github"></ion-icon>
+  <ion-icon class="text-white w-[2rem]" name="logo-github"></ion-icon>
 );
 
 export default GithubLogo;
