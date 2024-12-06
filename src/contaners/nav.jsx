@@ -45,8 +45,8 @@ export default function Nav({ containerRef }) {
   }, [containerRef]);
 
   return (
-    <div className="fixed top-0 left-0 w-screen border-b text-white bg-black shadow-md z-50 p-2">
-      <div className="flex justify-between items-center px-5">
+    <div className="fixed top-0 left-0 w-[98.7%] border-b text-white bg-black shadow-md z-50 p-2">
+      <div className="flex justify-between items-center px-2">
         <a
           href="#"
           className={` pb-2 pt-2 text-center transition-all duration-500`}

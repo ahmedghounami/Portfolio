@@ -37,13 +37,13 @@ export default function App() {
           <div className="flex gap-2">
             <a href="https://www.github.com/aghounami">
               <ion-icon
-                class=" border pt-2 pb-2 rounded-[0.6rem] text-white w-[2rem]"
+                className=" border pt-2 pb-2 rounded-[0.6rem] text-white w-[2rem]"
                 name="logo-github"
               ></ion-icon>
             </a>
             <a href="https://www.linkedin.com/in/ahmed-ghounami-a675b1294/">
               <ion-icon
-                class=" border pt-2 pb-2 rounded-[0.6rem] text-white w-[2rem]"
+                className=" border pt-2 pb-2 rounded-[0.6rem] text-white w-[2rem]"
                 name="logo-linkedin"
               ></ion-icon>
             </a>

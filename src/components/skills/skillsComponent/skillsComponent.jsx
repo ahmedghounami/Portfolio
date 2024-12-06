@@ -8,9 +8,9 @@ export function CardDemo() {
   return (
     <Card>
       <CardTitle>
-        <h1 className="font-extrabold text-[1.5rem] text-[#1DBAD5]">
+        <p className="font-extrabold text-[1.5rem] text-[#1DBAD5]">
           im specialize in multiple creativefields sush a Web Development.
-        </h1>
+        </p>
       </CardTitle>
 
       <CardSkeletonContainer>
@@ -338,28 +338,28 @@ export const MetaIconOutline = ({ className }) => {
 const JavaScriptLogo = () => (
   <ion-icon
     name="logo-nodejs"
-    class="w-[100px] h-[100px] text-[#c1ff3a]"
+    className="w-[100px] h-[100px] text-[#c1ff3a]"
   ></ion-icon>
 );
 
 const HTMLLogo = () => (
   <ion-icon
     name="logo-html5"
-    class="w-[100px] h-[100px] text-[#d85f37]"
+    className="w-[100px] h-[100px] text-[#d85f37]"
   ></ion-icon>
 );
 
 const CSSLogo = () => (
   <ion-icon
     name="logo-css3"
-    class="w-[100px] h-[100px] text-[#32bcde]"
+    className="w-[100px] h-[100px] text-[#32bcde]"
   ></ion-icon>
 );
 
 const ReactLogo = () => (
   <ion-icon
     name="logo-react"
-    class="w-[100px] h-[100px] text-[#2965f1]"
+    className="w-[100px] h-[100px] text-[#2965f1]"
   ></ion-icon>
 );
 
@@ -468,7 +468,7 @@ const TAILWINDCSSLogo = () => (
 );
 
 const GithubLogo = () => (
-  <ion-icon class="text-white w-[2rem]" name="logo-github"></ion-icon>
+  <ion-icon className="text-white w-[2rem]" name="logo-github"></ion-icon>
 );
 
 export default GithubLogo;
