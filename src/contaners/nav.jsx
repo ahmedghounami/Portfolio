@@ -16,18 +16,12 @@ export default function Nav({ containerRef }) {
 
   const handleScroll = () => {
     const scrollPosition = containerRef.current.scrollTop;
-    const sectionHeights = [
-      700, 
-      1200,
-      1800,
-      3000,
-      4400,
-    ];
+    const sectionHeights = [700, 1200, 1800, 3000, 4400];
     let currentShow = 1;
 
     for (let i = 0; i < sectionHeights.length; i++) {
       if (scrollPosition >= sectionHeights[i]) {
-        currentShow = i + 1; 
+        currentShow = i + 1;
       }
     }
 
@@ -78,7 +72,7 @@ export default function Nav({ containerRef }) {
           className={`pb-2 pt-2 text-center transition-all duration-500`}
           onClick={() => {
             containerRef.current.scrollTo({
-              top: 2000,
+              top: 1800,
               behavior: "smooth",
             });
             // setShow(3);
@@ -92,7 +86,7 @@ export default function Nav({ containerRef }) {
           } pb-2 pt-2 text-center transition-all duration-500`}
           onClick={() => {
             containerRef.current.scrollTo({
-              top: 2600,
+              top: 2400,
               behavior: "smooth",
             });
             // setShow(5);

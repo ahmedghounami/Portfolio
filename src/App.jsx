@@ -12,7 +12,8 @@ import { useRef } from "react";
 import { LampDemo } from "./components/header/header-Comp/header-Comp.jsx";
 import { GridBackgroundDemo } from "./components/background/background-Comp/background-Comp.jsx";
 import Github from "./components/skills/skillsComponent/skillsComponent.jsx";
-
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 export default function App() {
   const containerRef = useRef(null);
   return (
@@ -34,18 +35,18 @@ export default function App() {
           <p className="text-[#f5f5f5] text-center text-sm ">
             &copy; 2024, developed by Ahmed Ghounami.
           </p>
-          <div className="flex gap-2">
+          <div className="flex gap-6">
             <a href="https://www.github.com/aghounami">
-              <ion-icon
-                className=" border pt-2 pb-2 rounded-[0.6rem] text-white w-[2rem]"
+              <FaGithub
+                className="bg-[#1DBAD5] text-[2.3rem] rounded-full hover:scale-125 transition-all duration-500"
                 name="logo-github"
-              ></ion-icon>
+              />
             </a>
             <a href="https://www.linkedin.com/in/ahmed-ghounami-a675b1294/">
-              <ion-icon
-                className=" border pt-2 pb-2 rounded-[0.6rem] text-white w-[2rem]"
+              <FaLinkedin
+                className="bg-[#1DBAD5] text-[2.3rem] rounded-full hover:scale-125 transition-all duration-500"
                 name="logo-linkedin"
-              ></ion-icon>
+              />
             </a>
           </div>
         </div>
