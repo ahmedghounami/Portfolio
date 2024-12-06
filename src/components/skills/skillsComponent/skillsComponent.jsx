@@ -8,16 +8,11 @@ export function CardDemo() {
   return (
     <Card>
       <CardTitle>
-        <h1 className="font-extrabold text-[1.5rem] text-[#7e4aff]">
+        <h1 className="font-extrabold text-[1.5rem] text-[#1DBAD5]">
           im specialize in multiple creativefields sush a Web Development.
         </h1>
       </CardTitle>
-      <CardDescription>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-          voluptatibus excepturi pariatur similique
-        </p>
-      </CardDescription>
+
       <CardSkeletonContainer>
         <Skeleton />
       </CardSkeletonContainer>

@@ -18,7 +18,7 @@ export default function App() {
   return (
     <div
       ref={containerRef}
-      className="relative w-screen h-[100vh] bg-gradient-to-b from-black to-[#240541] flex flex-col items-center overflow-y-scroll overflow-x-hidden"
+      className="relative w-screen h-[100vh] bg-gradient-to-b from-[#020616] to-[#020616] flex flex-col items-center overflow-y-scroll overflow-x-hidden"
     >
       <Nav containerRef={containerRef} />
       {/* <GridBackgroundDemo /> */}
@@ -27,7 +27,7 @@ export default function App() {
         <Home />
         <About />
         <Skills />
-        <Progress />
+        {/* <Progress /> */}
         <Projects />
         <Biography />
         <div className="flex justify-between mt-[10rem] mb-[1rem]">

@@ -11,7 +11,7 @@ export function MeteorsDemo() {
         <div className="relative shadow-xl  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
           <Meteors number={50} />
           <div className="flex flex-col text-[white] mt-10">
-            <p className="text-[#5f39be] text-[3rem] font-bold">Hello, I am</p>
+            <p className="text-[#1DBAD5] text-[3rem] font-bold">Hello, I am</p>
             <p className="text-outline text-white text-[3rem] font-bold">
               Ahmed Ghounami, an
             </p>
@@ -26,9 +26,12 @@ export function MeteorsDemo() {
               continuously enhancing user experience through effective,
               innovative solutions.
             </p>
-            <div className="flex gap-4 mt-6 justify-center">
-              <MovingBorderDemo content={"Contact Me"} flag={1}/>
-              <MovingBorderDemo content={"Know More"} flag={0}/>
+            <div
+              className="flex gap-4 mt-6 justify-center"
+              
+            >
+              <MovingBorderDemo content={"Contact Me"} flag={1} />
+              <MovingBorderDemo content={"Know More"} flag={0} />
             </div>
           </div>
         </div>

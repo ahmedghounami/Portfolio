@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
 export default function Nav({ containerRef }) {
-  const [show, setShow] = useState(1); // Default to Home (or section 1)
-  
+  // const [show, setShow] = useState(1); // Default to Home (or section 1)
+
   // Throttle scroll events to improve performance
   const throttle = (callback, delay) => {
     let lastCall = 0;
@@ -17,22 +17,21 @@ export default function Nav({ containerRef }) {
   const handleScroll = () => {
     const scrollPosition = containerRef.current.scrollTop;
     const sectionHeights = [
-      700, // Height to trigger Home
-      1200, // Height to trigger About Me
-      1800, // Height to trigger My Skills
-      2400, // Height to trigger My Experience
-      3000, // Height to trigger Projects
-      4400, // Height to trigger Contact
+      700, 
+      1200,
+      1800,
+      3000,
+      4400,
     ];
     let currentShow = 1;
 
     for (let i = 0; i < sectionHeights.length; i++) {
       if (scrollPosition >= sectionHeights[i]) {
-        currentShow = i + 1; // We increment by 1 to match sections (Home, About Me, etc.)
+        currentShow = i + 1; 
       }
     }
-    
-    setShow(currentShow);
+
+    // setShow(currentShow);
   };
 
   useEffect(() => {
@@ -53,10 +52,10 @@ export default function Nav({ containerRef }) {
           className={` pb-2 pt-2 text-center transition-all duration-500`}
           onClick={() => {
             containerRef.current.scrollTo({
-              top: 500,
+              top: 600,
               behavior: "smooth",
             });
-            setShow(1);
+            // setShow(1);
           }}
         >
           Home
@@ -66,10 +65,10 @@ export default function Nav({ containerRef }) {
           className={`pb-2 pt-2 text-center transition-all duration-500`}
           onClick={() => {
             containerRef.current.scrollTo({
-              top: 1200,
+              top: 1300,
               behavior: "smooth",
             });
-            setShow(2);
+            // setShow(2);
           }}
         >
           About Me
@@ -79,10 +78,10 @@ export default function Nav({ containerRef }) {
           className={`pb-2 pt-2 text-center transition-all duration-500`}
           onClick={() => {
             containerRef.current.scrollTo({
-              top: 1800,
+              top: 2000,
               behavior: "smooth",
             });
-            setShow(3);
+            // setShow(3);
           }}
         >
           My Skills
@@ -93,24 +92,10 @@ export default function Nav({ containerRef }) {
           } pb-2 pt-2 text-center transition-all duration-500`}
           onClick={() => {
             containerRef.current.scrollTo({
-              top: 2500,
+              top: 2600,
               behavior: "smooth",
             });
-            setShow(4);
-          }}
-        >
-          My Experience
-        </a>
-        <a
-          href="#"
-          className={` ? "underline text-yellow-500" : ""
-          } pb-2 pt-2 text-center transition-all duration-500`}
-          onClick={() => {
-            containerRef.current.scrollTo({
-              top: 3000,
-              behavior: "smooth",
-            });
-            setShow(5);
+            // setShow(5);
           }}
         >
           Projects
@@ -124,7 +109,7 @@ export default function Nav({ containerRef }) {
               top: 4400,
               behavior: "smooth",
             });
-            setShow(6);
+            // setShow(6);
           }}
         >
           Contact

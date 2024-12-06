@@ -13,7 +13,7 @@ export default function Skills() {
       duration: 1,
       ease: "easeInOut",
     }} className="flex flex-col text-white ">
-      <h1 className="font-extrabold text-[3rem] text-center text-[#7e4aff]">
+      <h1 className="font-extrabold text-[3rem] text-center text-[#1DBAD5]">
         My Skills
       </h1>
       <p className="font-bold text-[1.3rem] pb-[3rem] text-center">
