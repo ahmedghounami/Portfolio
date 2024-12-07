@@ -15,7 +15,7 @@ export default function About() {
         duration: 1,
         ease: "easeInOut",
       }}
-      className="flex gap-[4rem] text-[white] relative flex-col sm:flex-col md:flex-col lg:flex-row"
+      className="flex gap-[4rem] text-[white] mx-2 relative flex-col sm:flex-col md:flex-col lg:flex-row"
     >
       <div>
         <img src={Profile} alt="picture" className="w-[28rem] h-[30rem] rounded-lg shadow-lg object-cover " />
