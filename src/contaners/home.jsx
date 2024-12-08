@@ -2,7 +2,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect } from "react";
 import Profile from "../assets/person.jpg";
-
+import '../global.css'
 import { MeteorsDemo } from "../components/button/mouvebutton/mouveComponent";
 import { motion } from "framer-motion";
 
@@ -24,6 +24,7 @@ export default function Home() {
         ease: "easeInOut",
       }}
       className="text-center flex justify-center items-center"
+      id="home"
     >
       <MeteorsDemo />
     </motion.div>

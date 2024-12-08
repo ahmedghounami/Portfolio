@@ -5,6 +5,7 @@ import Binary from "../assets/binary.gif";
 import Cub from "../assets/cub.png";
 import Mini from "../assets/mini.png";
 import { motion } from "framer-motion";
+import '../global.css'
 
 export default function Projects() {
   return (
@@ -17,6 +18,7 @@ export default function Projects() {
         ease: "easeInOut",
       }}
       className="flex flex-col   text-[white] justify-center relative "
+      id="projects"
     >
       <h1 className="z-40 -mb-10 font-extrabold text-[2rem] text-center text-[#1DBAD5]">
         My spotlight projects in 42 network school 🚀

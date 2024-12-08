@@ -3,6 +3,7 @@ import skills from "../assets/skills.png";
 import Aos from "aos";
 import { motion } from "framer-motion";
 import { CardDemo } from "../components/skills/skillsComponent/skillsComponent.jsx";
+import '../global.css'
 
 export default function Skills() {
   return (
@@ -15,6 +16,7 @@ export default function Skills() {
         ease: "easeInOut",
       }}
       className="flex flex-col text-white "
+      id="skills"
     >
       <h1 className="font-extrabold text-[3rem] text-center text-[#1DBAD5]">
         My Skills

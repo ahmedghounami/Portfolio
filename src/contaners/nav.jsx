@@ -1,110 +1,37 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import "../global.css";
 
-export default function Nav({ containerRef }) {
-  // const [show, setShow] = useState(1); // Default to Home (or section 1)
-
-  // Throttle scroll events to improve performance
-  const throttle = (callback, delay) => {
-    let lastCall = 0;
-    return function () {
-      const now = new Date().getTime();
-      if (now - lastCall < delay) return;
-      lastCall = now;
-      callback(...arguments);
-    };
-  };
-
-  const handleScroll = () => {
-    const scrollPosition = containerRef.current.scrollTop;
-    const sectionHeights = [700, 1200, 1800, 3000, 4400];
-    let currentShow = 1;
-
-    for (let i = 0; i < sectionHeights.length; i++) {
-      if (scrollPosition >= sectionHeights[i]) {
-        currentShow = i + 1;
-      }
-    }
-
-    // setShow(currentShow);
-  };
-
-  useEffect(() => {
-    const throttledScroll = throttle(handleScroll, 100); // Throttle scroll events to every 100ms
-    containerRef.current.addEventListener("scroll", throttledScroll);
-
-    // Cleanup the event listener on component unmount
-    return () => {
-      containerRef.current.removeEventListener("scroll", throttledScroll);
-    };
-  }, [containerRef]);
-
+export default function Nav() {
   return (
-    <div className="fixed top-0 left-0 w-[98.7%] border-b text-white bg-black shadow-md z-50 p-2">
+    <div className="fixed top-[90%] left-[30%] w-[40%] rounded-full text-white bg-black z-50 p-2 shadow-custom">
       <div className="flex justify-between items-center px-2">
         <a
-          href="#"
-          className={` pb-2 pt-2 text-center transition-all duration-500`}
-          onClick={() => {
-            containerRef.current.scrollTo({
-              top: 600,
-              behavior: "smooth",
-            });
-            // setShow(1);
-          }}
+          href="#home"
+          className="pb-2 pt-2 text-center transition-all duration-500"
         >
           Home
         </a>
         <a
-          href="#"
-          className={`pb-2 pt-2 text-center transition-all duration-500`}
-          onClick={() => {
-            containerRef.current.scrollTo({
-              top: 1300,
-              behavior: "smooth",
-            });
-            // setShow(2);
-          }}
+          href="#about"
+          className="pb-2 pt-2 text-center transition-all duration-500"
         >
           About Me
         </a>
         <a
-          href="#"
-          className={`pb-2 pt-2 text-center transition-all duration-500`}
-          onClick={() => {
-            containerRef.current.scrollTo({
-              top: 1800,
-              behavior: "smooth",
-            });
-            // setShow(3);
-          }}
+          href="#skills"
+          className="pb-2 pt-2 text-center transition-all duration-500"
         >
           My Skills
         </a>
         <a
-          href="#"
-          className={` ? "underline text-yellow-500" : ""
-          } pb-2 pt-2 text-center transition-all duration-500`}
-          onClick={() => {
-            containerRef.current.scrollTo({
-              top: 2400,
-              behavior: "smooth",
-            });
-            // setShow(5);
-          }}
+          href="#projects"
+          className="pb-2 pt-2 text-center transition-all duration-500"
         >
           Projects
         </a>
         <a
-          href="#"
-          className={` ? "underline text-yellow-500" : ""
-          } pb-2 pt-2 text-center transition-all duration-500`}
-          onClick={() => {
-            containerRef.current.scrollTo({
-              top: 4400,
-              behavior: "smooth",
-            });
-            // setShow(6);
-          }}
+          href="#biography"
+          className="pb-2 pt-2 text-center transition-all duration-500"
         >
           Contact
         </a>

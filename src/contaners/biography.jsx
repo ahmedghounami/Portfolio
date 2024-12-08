@@ -1,6 +1,7 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { motion } from "framer-motion";
+import '../global.css'
 
 export default function Biography() {
   return (
@@ -13,6 +14,7 @@ export default function Biography() {
         ease: "easeInOut",
       }}
       className="flex flex-col gap-[2rem] text-[white] justify-center relative"
+      id="biography"
     >
       <h1 className="font-extrabold text-[4rem] text-center text-[#1DBAD5]">
         My Biography

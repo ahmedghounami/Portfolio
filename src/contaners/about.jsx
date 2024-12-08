@@ -4,6 +4,7 @@ import exp from "../assets/exp.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { motion } from "framer-motion";
+import '../global.css'
 
 export default function About() {
   return (
@@ -16,6 +17,7 @@ export default function About() {
         ease: "easeInOut",
       }}
       className="flex gap-[4rem] text-[white] mx-2 relative flex-col sm:flex-col md:flex-col lg:flex-row"
+      id="about"
     >
       <div>
         <img src={Profile} alt="picture" className="w-[28rem] h-[30rem] rounded-lg shadow-lg object-cover " />
