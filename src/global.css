@@ -19,6 +19,6 @@
   box-shadow: 0 4px 10px rgba(247, 246, 246, 0.189); /* Adjust the values as needed */
 }
 
-html {
+* {
   scroll-behavior: smooth;
 }

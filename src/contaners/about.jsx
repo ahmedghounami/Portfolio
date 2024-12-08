@@ -25,7 +25,7 @@ export default function About() {
       <div className="flex flex-col text-[white] ">
         <h1 className="font-extrabold text-[2rem] mb-[2rem]">About Me</h1>
         <p className="font-extrabold text-[2rem] text-[#1DBAD5] mb-[1rem]">
-          Student at 1337 School, <br></br> Full Stack Web Developer.
+          Student at 1337 School, <br></br> Front end Web Developer.
           <br></br>
         </p>
         <p className="font-extralight">
@@ -39,26 +39,6 @@ export default function About() {
           and growing in the tech field, always eager to face the next
           challenge.
         </p>
-        {/* <div className="bg-[#181616] flex gap-6 p-4">
-          <img src={projects} alt="projects" className="w-[8rem] h-[6rem]" />
-          <div>
-            <p className="font-bold text-[#743bd7]"> 20+ Complete Projects</p>
-            <p className=" font-extralight text-sm"></p>
-          </div>
-        </div>
-        <div className="bg-[#181616] flex gap-6 p-4">
-          <img src={exp} alt="projects" className="w-[8rem] h-[6rem]" />
-          <div>
-            <p className="font-bold text-[#743bd7]"> 1 Year + Experience</p>
-            <p className=" font-extralight text-sm">
-              The 1337 piscine was my first encounter with coding—a month
-              <br />
-              filled with invaluable experience and knowledge that kickstarted
-              <br />
-              my journey in programming.
-            </p>
-          </div>
-        </div> */}
       </div>
     </motion.div>
   );
