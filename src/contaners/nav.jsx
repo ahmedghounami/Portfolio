@@ -3,7 +3,7 @@ import "../global.css";
 
 export default function Nav() {
   return (
-    <div className="fixed top-[90%] left-[30%] w-[40%] rounded-full text-white bg-black z-50 p-2 shadow-custom">
+    <div className="fixed top-[86%] left-[0%] w-[100%] rounded-full text-white bg-black z-50 p-2 shadow-custom sm:w-[100%] sm:left-[0%] lg:w-[30%] md:left-[10%] md:w-[80%] lg:left-[30%]">
       <div className="flex justify-between items-center px-2">
         <a
           href="#home"
