@@ -2,7 +2,7 @@ import { cn } from "../../../utils/cn";
 import React from "react";
 
 export const Meteors = () => {
-  const meteors = new Array(80).fill(true);
+  const meteors = new Array(55).fill(true);
   return (
     <>
       {meteors.map((el, idx) => (
