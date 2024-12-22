@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 import "../global.css";
 
 export default function Nav() {

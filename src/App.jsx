@@ -1,7 +1,7 @@
 import "./global.css";
 import React, { useEffect } from "react";
 import Nav from "./contaners/nav.jsx";
-import Conteaner from "./contaners/container.jsx";
+import container from "./contaners/container.jsx";
 import Home from "./contaners/home.jsx";
 import About from "./contaners/about.jsx";
 import Biography from "./contaners/biography.jsx";
@@ -14,21 +14,19 @@ import { GridBackgroundDemo } from "./components/background/background-Comp/back
 import Github from "./components/skills/skillsComponent/skillsComponent.jsx";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+
+import { Meteors } from "./components/button/mouvebutton/mouvebutton.jsx";
 export default function App() {
-  const containerRef = useRef(null);
   return (
-    <div
-      ref={containerRef}
-      className="relative w-screen h-[100vh] bg-gradient-to-b from-[#020616] to-[#020616] flex flex-col items-center overflow-y-scroll overflow-x-hidden"
-    >
-      <Nav containerRef={containerRef} />
-      {/* <GridBackgroundDemo /> */}
-      <Conteaner>
+    <div className="relative w-screen h-[100vh] bg-gradient-to-b from-[#020616] to-[#020616] flex flex-col items-center overflow-y-scroll overflow-x-hidden">
+      <Nav />
+      <Meteors />
+      <container>
         <LampDemo />
         <Home />
         <About />
         <Skills />
-        {/* <Progress /> */}
+
         <Projects />
         <Biography />
         <div className="flex justify-between mt-[10rem] mb-[1rem]">
@@ -50,7 +48,7 @@ export default function App() {
             </a>
           </div>
         </div>
-      </Conteaner>
+      </container>
     </div>
   );
 }
