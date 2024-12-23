@@ -1,5 +1,4 @@
 {
-  "homepage": "https://aghounami.github.io/Portfolio",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
@@ -8,9 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "vite build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@tabler/icons-react": "^3.21.0",
