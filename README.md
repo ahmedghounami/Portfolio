@@ -7,7 +7,7 @@
 <p>You can view the live demo of my portfolio by clicking the link below:</p>
 
 <p>
-  <a href="https://ahmedghounami.github.io/Portfolio" target="_blank">
+  <a href="https://aghounam.me/" target="_blank">
     View Live Demo
   </a>
 </p>
