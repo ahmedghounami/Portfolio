@@ -16,7 +16,7 @@ export default function About() {
         duration: 1,
         ease: "easeInOut",
       }}
-      className="flex gap-[4rem] text-[white] mx-2 relative flex-col sm:flex-col md:flex-col lg:flex-row"
+      className="flex gap-[4rem] text-[white] mx-2 justify-center items-center relative flex-col sm:flex-col md:flex-col lg:flex-row"
       id="about"
     >
       <div>
