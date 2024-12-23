@@ -1,7 +1,7 @@
 import "./global.css";
 import React, { useEffect } from "react";
 import Nav from "./contaners/nav.jsx";
-import container from "./contaners/container.jsx";
+import Container from "./contaners/container.jsx";
 import Home from "./contaners/home.jsx";
 import About from "./contaners/about.jsx";
 import Biography from "./contaners/biography.jsx";
@@ -21,7 +21,7 @@ export default function App() {
     <div className="relative w-screen h-[100vh] bg-gradient-to-b from-[#020616] to-[#020616] flex flex-col items-center overflow-y-scroll overflow-x-hidden">
       <Nav />
       <Meteors />
-      <container>
+      <Container>
         <LampDemo />
         <Home />
         <About />
@@ -48,7 +48,7 @@ export default function App() {
             </a>
           </div>
         </div>
-      </container>
+      </Container>
     </div>
   );
 }
