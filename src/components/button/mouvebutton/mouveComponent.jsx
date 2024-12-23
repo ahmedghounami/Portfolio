@@ -11,12 +11,12 @@ export function MeteorsDemo() {
         <div className="relative shadow-xl  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
           {/* <Meteors number={50} /> */}
           <div className="flex flex-col text-[white] mt-10">
-            <p className="text-[#1DBAD5] text-[3rem] font-bold">Hello, I am</p>
-            <p className="text-outline text-white text-[3rem] font-bold">
-              Ahmed Ghounami, an
+            <p className="text-[#ffffff] text-[3rem] font-bold">Hello, I am</p>
+            <p className=" text-[#1DBAD5] text-[3rem] font-bold">
+              Ahmed Ghounami,
             </p>
-            <p className="text-white text-[2rem] font-bold">
-              Aspiring Web Developer.
+            <p className="text-[#ffffff] text-[2rem] font-bold">
+              an Aspiring Web Developer.
             </p>
             <p className="text-[white] pt-10 font-extralight">
               Experienced in web development with a strong command of
