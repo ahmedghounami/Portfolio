@@ -34,7 +34,7 @@ export default function App() {
             &copy; 2024, developed by Ahmed Ghounami.
           </p>
           <div className="flex gap-6">
-            <a href="https://www.github.com/aghounami">
+            <a href="https://www.github.com/ahmedghounami">
               <FaGithub
                 className="bg-[#1DBAD5] text-[2.3rem] rounded-full hover:scale-125 transition-all duration-500"
                 name="logo-github"
