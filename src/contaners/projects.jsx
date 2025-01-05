@@ -27,13 +27,13 @@ export default function Projects() {
         <ThreeDCardDemo pic={Mini} /> */}
         <AnimatedPinDemo
           pic={Cub}
-          destination="https://github.com/aghounami/CUB3D"
+          destination="https://github.com/ahmedghounami/CUB3D"
           title="Cub3D"
           description="CUB3D is an exciting project that allows you to explore the principles of ray-casting by creating a dynamic 3D view inside a maze."
         />
         <AnimatedPinDemo
           pic={Mini}
-          destination="https://github.com/aghounami/minishell"
+          destination="https://github.com/ahmedghounami/minishell"
           title="Minishell"
           description="Welcome to the Minishell project! This project involves creating a simple shell, akin to your own little version of bash."
         />
