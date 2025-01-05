@@ -1,6 +1,5 @@
 import { ThreeDCardDemo } from "../components/AceternityUI/3D-cardEffect/3d-cardComponent";
 import { AnimatedPinDemo } from "../components/pin/3d-pin/3d-pinComponent";
-import Binary from "../assets/binary.gif";
 
 import Cub from "../assets/cub.png";
 import Mini from "../assets/mini.png";

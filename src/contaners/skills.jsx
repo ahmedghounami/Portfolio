@@ -1,5 +1,4 @@
 import Badge from "./badge.jsx";
-import skills from "../assets/skills.png";
 import Aos from "aos";
 import { motion } from "framer-motion";
 import { CardDemo } from "../components/skills/skillsComponent/skillsComponent.jsx";

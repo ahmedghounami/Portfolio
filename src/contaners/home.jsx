@@ -1,7 +1,6 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect } from "react";
-import Profile from "../assets/person.jpg";
 import '../global.css'
 import { MeteorsDemo } from "../components/button/mouvebutton/mouveComponent";
 import { motion } from "framer-motion";

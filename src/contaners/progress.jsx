@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Badge from "./badge.jsx";
-import Pool from "../assets/piscine.png";
 export default function Progress() {
   return (
     <motion.div

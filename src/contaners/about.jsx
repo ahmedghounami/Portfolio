@@ -1,6 +1,4 @@
-import projects from "../assets/projects.png";
-import Profile from "../assets/me.jpeg";
-import exp from "../assets/exp.png";
+import Profile from "../assets/me.JPG";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { motion } from "framer-motion";
