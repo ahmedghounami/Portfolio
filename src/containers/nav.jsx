@@ -1,39 +1,41 @@
-
 import "../global.css";
+import { HiHome } from "react-icons/hi2";
+import { SiAboutdotme } from "react-icons/si";
+import { RiContactsFill } from "react-icons/ri";
 
 export default function Nav() {
   return (
-    <div className="fixed top-[86%] left-[4%] w-[92%] rounded-full text-white bg-black z-50 p-2 shadow-custom sm:w-[92%] sm:left-[4%] lg:w-[40%] md:left-[10%] md:w-[80%] lg:left-[30%]">
+    <div className="fixed bottom-[5%] left-[50%] translate-x-[-50%] w-[100%] rounded-full text-white bg-black bg-opacity-50 z-50 p-2 shadow-lg transition-all duration-300  sm:w-[100%] md:w-[100%] lg:w-[40rem]">
       <div className="flex justify-between items-center px-2">
         <a
           href="#home"
-          className="pb-2 pt-2 text-center transition-all duration-500"
+          className="px-4 py-2 text-center bg-gray-700 hover:bg-gray-600 transition-all duration-300 rounded-3xl hover:scale-110"
         >
-          Home
+          <HiHome size={28} />
         </a>
         <a
           href="#about"
-          className="pb-2 pt-2 text-center transition-all duration-500"
+          className="px-4 py-2 text-center bg-gray-700 hover:bg-gray-600 transition-all duration-300 rounded-3xl hover:scale-110"
         >
           About Me
         </a>
         <a
           href="#skills"
-          className="pb-2 pt-2 text-center transition-all duration-500"
+          className="px-4 py-2 text-center bg-gray-700 hover:bg-gray-600 transition-all duration-300 rounded-3xl hover:scale-110"
         >
-          My Skills
+          Skills
         </a>
         <a
           href="#projects"
-          className="pb-2 pt-2 text-center transition-all duration-500"
+          className="px-4 py-2 text-center bg-gray-700 hover:bg-gray-600 transition-all duration-300 rounded-3xl hover:scale-110"
         >
           Projects
         </a>
         <a
           href="#biography"
-          className="pb-2 pt-2 text-center transition-all duration-500"
+          className="px-4 py-2 text-center bg-gray-700 hover:bg-gray-600 transition-all duration-300 rounded-3xl hover:scale-110"
         >
-          Contact
+          <RiContactsFill size={28} />
         </a>
       </div>
     </div>

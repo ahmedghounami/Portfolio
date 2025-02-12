@@ -18,7 +18,7 @@ export default function About() {
       id="about"
     >
       <div>
-        <img src={Profile} alt="picture" className="w-[28rem] h-[30rem] rounded-lg shadow-lg object-cover " />
+        <img src={Profile} alt="picture" className="w-[24rem] h-[30rem] rounded-lg shadow-lg object-cover " />
       </div>
       <div className="flex flex-col text-[white] ">
         <h1 className="font-extrabold text-[2rem] mb-[2rem]">About Me</h1>

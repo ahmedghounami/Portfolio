@@ -16,9 +16,11 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 import { Meteors } from "./components/button/mouvebutton/mouvebutton.jsx";
+import ShowNav from "./containers/shownav.jsx";
 export default function App() {
   return (
     <div className="relative w-screen h-[100vh] bg-gradient-to-b from-[#020616] to-[#020616] flex flex-col items-center overflow-y-scroll overflow-x-hidden">
+      <ShowNav />
       <Nav />
       <Meteors />
       <Container>

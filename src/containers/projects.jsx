@@ -17,7 +17,7 @@ export default function Projects() {
         duration: 1,
         ease: "easeInOut",
       }}
-      className="flex flex-col   text-[white] justify-center relative "
+      className="flex flex-col   text-[white] justify-between relative "
       id="projects"
     >
       <h1 className="z-40 -mb-10 font-extrabold text-[2rem] text-center text-[#1DBAD5]">
@@ -40,11 +40,10 @@ export default function Projects() {
         />
         <AnimatedPinDemo
           pic={incep}
-          destination="https://github.com/ahmedghounami/inception"
+          destination="https://github.com/ahmedghounami/42-inception"
           title="inception"
           description="Inception is a project that introduces you to the basics of system and network administration."
         />
-        {/* <img src={Binary} alt="cub" className="absolute top-0 left-0 w-full h-full" /> */}
       </div>
     </motion.div>
   );
