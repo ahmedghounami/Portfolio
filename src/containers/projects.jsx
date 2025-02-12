@@ -3,6 +3,7 @@ import { AnimatedPinDemo } from "../components/pin/3d-pin/3d-pinComponent";
 
 import Cub from "../assets/cub.png";
 import Mini from "../assets/mini.png";
+import incep from "../assets/inception.jpg";
 import { motion } from "framer-motion";
 import '../global.css'
 
@@ -36,6 +37,12 @@ export default function Projects() {
           destination="https://github.com/ahmedghounami/minishell"
           title="Minishell"
           description="Welcome to the Minishell project! This project involves creating a simple shell, akin to your own little version of bash."
+        />
+        <AnimatedPinDemo
+          pic={incep}
+          destination="https://github.com/ahmedghounami/inception"
+          title="inception"
+          description="Inception is a project that introduces you to the basics of system and network administration."
         />
         {/* <img src={Binary} alt="cub" className="absolute top-0 left-0 w-full h-full" /> */}
       </div>
