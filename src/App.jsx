@@ -20,7 +20,6 @@ import ShowNav from "./containers/shownav.jsx";
 export default function App() {
   return (
     <div className="relative w-screen h-[100vh] bg-gradient-to-b from-[#020616] to-[#020616] flex flex-col items-center overflow-y-scroll overflow-x-hidden">
-      <ShowNav />
       <Nav />
       <Meteors />
       <Container>
