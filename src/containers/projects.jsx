@@ -4,7 +4,10 @@ import { AnimatedPinDemo } from "../components/pin/3d-pin/3d-pinComponent";
 import Cub from "../assets/cub.png";
 import Mini from "../assets/mini.png";
 import incep from "../assets/inception.jpg";
+import webser from "../assets/webserv.png";
+
 import { motion } from "framer-motion";
+
 import '../global.css'
 
 export default function Projects() {
@@ -23,9 +26,7 @@ export default function Projects() {
       <h1 className="z-40 -mb-10 font-extrabold text-[2rem] text-center text-[#1DBAD5]">
         My spotlight projects in 42 network school 🚀
       </h1>
-      <div className="flex gap-6 justify-between relative flex-col sm:flex-col md:flex-col lg:flex-row">
-        {/* <ThreeDCardDemo pic={Cub} />
-        <ThreeDCardDemo pic={Mini} /> */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 p-4">
         <AnimatedPinDemo
           pic={Cub}
           destination="https://github.com/ahmedghounami/CUB3D"
@@ -43,6 +44,12 @@ export default function Projects() {
           destination="https://github.com/ahmedghounami/42-inception"
           title="inception"
           description="Inception is a project that introduces you to the basics of system and network administration."
+        />
+        <AnimatedPinDemo
+          pic={webser}
+          destination="https://github.com/ahmedghounami/httpserver"
+          title="httpserver"
+          description="HTTP Server is a project that allows you to create a simple HTTP server that can handle basic requests and responses."
         />
       </div>
     </motion.div>

@@ -20,9 +20,9 @@ export function MeteorsDemo() {
             </p>
             <p className="text-[white] pt-10 font-extralight">
               Experienced in web development with a strong command of
-              front-end technologies. Skilled in modern frameworks
-              like React and Node.js, creating responsive, high-performance
-              Website.
+              front-end and back-end technologies. Skilled in modern frameworks
+              like React, Node.js, next.js, fastify, express, creating responsive, high-performance
+              Website, solving complex problems.
             </p>
             <div
               className="flex gap-4 mt-6 justify-center"

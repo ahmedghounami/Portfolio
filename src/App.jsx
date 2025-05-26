@@ -30,9 +30,10 @@ export default function App() {
 
         <Projects />
         <Biography />
+
         <div className="flex justify-between mt-[10rem] mb-[1rem]">
           <p className="text-[#f5f5f5] text-center text-sm ">
-            &copy; 2024, developed by Ahmed Ghounami.
+            Made with ❤️ by Ahmed Ghounami &nbsp;© {new Date().getFullYear()}
           </p>
           <div className="flex gap-6">
             <a href="https://www.github.com/ahmedghounami">
