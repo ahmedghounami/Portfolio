@@ -4,18 +4,17 @@ import { SiAboutdotme } from "react-icons/si";
 import { RiContactsFill } from "react-icons/ri";
 import { FaLaptopCode } from "react-icons/fa";
 import { GiSkills } from "react-icons/gi";
-
 export default function Nav() {
   return (
-    <div className="fixed bottom-[5%] left-1/2 -translate-x-1/2 w-[70%] sm:w-[70%] md:w-[45%] lg:w-[30rem] bg-black bg-opacity-40 backdrop-blur-md shadow-xl z-50 p-3 rounded-full border border-purple-500/40">
-      <div className="flex justify-between items-center px-4 text-white">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-[#020616] shadow-lg rounded-b-lg">
+      <div className="flex flex-wrap sm:flex-nowrap justify-between items-center px-2 sm:px-4 py-2 sm:py-3 text-white gap-2 sm:gap-0">
         <NavItem href="#home" icon={<HiHome size={24} />} />
-        <NavItem href="#about" icon={<SiAboutdotme size={22} />} text="About" />
-        <NavItem href="#skills" icon={<GiSkills size={22} />} text="Skills" />
-        <NavItem href="#projects" icon={<FaLaptopCode size={22} />} text="Projects" />
-        <NavItem href="#biography" icon={<RiContactsFill size={24} />} />
+        <NavItem href="#about" icon={<SiAboutdotme size={20} />} text="About" />
+        <NavItem href="#skills" icon={<GiSkills size={20} />} text="Skills" />
+        <NavItem href="#projects" icon={<FaLaptopCode size={20} />} text="Projects" />
+        <NavItem href="#biography" icon={<RiContactsFill size={22} />} />
       </div>
-    </div>
+    </nav>
   );
 }
 
