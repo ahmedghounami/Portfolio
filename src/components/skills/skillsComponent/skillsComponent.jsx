@@ -66,8 +66,8 @@ import {
 
 const Skeleton = () => {
   return (
-    <div className="p-8 overflow-hidden h-full relative flex items-center justify-center bg- dark:bg-gray-900">
-      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 max-w-4xl">
+    <div className="p-8  h-full relative flex items-center justify-center bg- dark:bg-gray-900 overflow-scroll">
+      <div className="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-6 gap-6 max-w-4xl sm:max-w-2xl">
         <Container className="h-16 w-16 circle-1 animate-float">
           <SiNextdotjs className="h-10 w-10 text-white dark:text-white transition-colors duration-300 hover:text-indigo-600" />
         </Container>
