@@ -23,7 +23,7 @@ export default function About() {
       <div className="flex flex-col text-[white] ">
         <h1 className="font-extrabold text-[2rem] mb-[2rem]">About Me</h1>
         <p className="font-extrabold text-[2rem] text-[#1DBAD5] mb-[1rem]">
-          Student at 1337 School, <br></br> Front end Web Developer.
+          Student at 1337 School, <br></br> future Full Stack Developer
           <br></br>
         </p>
         <p className="font-extralight">

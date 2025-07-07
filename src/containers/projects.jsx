@@ -51,6 +51,18 @@ export default function Projects() {
           title="httpserver"
           description="HTTP Server is a project that allows you to create a simple HTTP server that can handle basic requests and responses."
         />
+        <AnimatedPinDemo
+          pic="https://www.thesslstore.com/blog/wp-content/uploads/2021/05/client-authentication-certificate-feature.jpg"
+          destination="https://github.com/ahmedghounami/authentification"
+          title="Authentification"
+          description="This project is a simple authentication system that allows users to register and log in securely."
+        />
+        <AnimatedPinDemo
+          pic="https://t4.ftcdn.net/jpg/05/62/79/67/360_F_562796726_v3vZjEugS2tibKNprK4nVQ1O7wAWs9Yy.jpg"
+          destination="https://github.com/ahmedghounami/trans"
+          title="chat-app"
+          description="This project is a simple chat application that allows users to communicate with each other in real-time, right now is just in progress but you can see the code and the design."
+        />
       </div>
     </motion.div>
   );

@@ -15,7 +15,7 @@ export function LampDemo() {
         }}
         className="mt-40 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
       >
-        Welcome to my Portfolio <br></br>and My First Project with <br></br>
+        Welcome to my Portfolio <br></br>Project with <br></br>
         React js and TailwindCSS
       </motion.h1>
     </LampContainer>

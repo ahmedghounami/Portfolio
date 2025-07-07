@@ -18,7 +18,7 @@
     "mini-svg-data-uri": "^1.4.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-icons": "^5.4.0",
+    "react-icons": "^5.5.0",
     "react-router-dom": "^6.28.0",
     "tailwind-merge": "^2.5.4",
     "vite-plugin-image-optimizer": "^1.1.8"

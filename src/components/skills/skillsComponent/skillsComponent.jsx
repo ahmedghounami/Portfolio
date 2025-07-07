@@ -3,6 +3,17 @@ import { animate, motion } from "framer-motion";
 import React, { useEffect } from "react";
 import { cn } from "../../../utils/cn";
 import { GoCopilot } from "react-icons/go";
+import { RiReactjsLine } from "react-icons/ri";
+
+// import { 
+//   SiJavascript, 
+//   SiNextdotjs, 
+//   SiCss3, 
+//   SiReact, 
+//   SiCplusplus, 
+//   SiC, 
+//   SiTailwindcss 
+// } from "react-icons/si";
 
 export function CardDemo() {
   return (
@@ -20,127 +31,86 @@ export function CardDemo() {
   );
 }
 
-const Skeleton = () => {
-  const scale = [1, 1.1, 1];
-  const transform = ["translateY(0px)", "translateY(-4px)", "translateY(0px)"];
-  const sequence = [
-    [
-      ".circle-1",
-      {
-        scale,
-        transform,
-      },
-      { duration: 1 },
-    ],
-    [
-      ".circle-2",
-      {
-        scale,
-        transform,
-      },
-      { duration: 1 },
-    ],
-    [
-      ".circle-3",
-      {
-        scale,
-        transform,
-      },
-      { duration: 1 },
-    ],
-    [
-      ".circle-4",
-      {
-        scale,
-        transform,
-      },
-      { duration: 1 },
-    ],
-    [
-      ".circle-5",
-      {
-        scale,
-        transform,
-      },
-      { duration: 1 },
-    ],
-  ];
+import {
+  SiNextdotjs,
+  SiReact,
+  SiTailwindcss,
+  SiFastify,
+  SiExpress,
+  SiMongodb,
+  SiSqlite,
+  SiDocker,
+  SiVercel,
+  SiTypescript,
+  SiCplusplus,
+  SiSupabase
+} from "react-icons/si";
 
-  useEffect(() => {
-    // @ts-ignore
-    animate(sequence, {
-      repeat: Infinity,
-      repeatDelay: 1,
-    });
-  }, []);
+// const Container = ({ children, className }) => (
+//   <div
+//     className={`
+//       flex items-center justify-center rounded-lg
+//       bg-gray-100 dark:bg-gray-800
+//       shadow-md
+//       transition-transform duration-300 ease-in-out
+//       transform
+//       hover:scale-110 hover:shadow-xl
+//       hover:-translate-y-1
+//       cursor-pointer
+//       ${className}
+//     `}
+//   >
+//     {children}
+//   </div>
+// );
+
+const Skeleton = () => {
   return (
-    <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
-      <div className="flex flex-wrap justify-center items-center gap-6">
-        <Container className="h-8 w-8 circle-1">
-          <JavaScriptLogo className="h-4 w-4 " />
+    <div className="p-8 overflow-hidden h-full relative flex items-center justify-center bg- dark:bg-gray-900">
+      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 max-w-4xl">
+        <Container className="h-16 w-16 circle-1 animate-float">
+          <SiNextdotjs className="h-10 w-10 text-white dark:text-white transition-colors duration-300 hover:text-indigo-600" />
         </Container>
-        <Container className="h-12 w-12 circle-6">
-          <CPPLogo className="h-6 w-6 " />
+        <Container className="h-20 w-20 circle-2 animate-float delay-100">
+          <SiReact className="h-12 w-12 text-cyan-500 transition-colors duration-300 hover:text-cyan-400" />
         </Container>
-        <Container className="h-16 w-16 circle-3">
-          <HTMLLogo className="h-8 w-8 " />
+        <Container className="h-16 w-16 circle-3 animate-float delay-200">
+          <SiTailwindcss className="h-10 w-10 text-sky-400 transition-colors duration-300 hover:text-sky-300" />
         </Container>
-        <Container className="h-20 w-20 circle-4">
-          <ReactLogo className="h-10 w-10 dark:text-white" />
+        <Container className="h-16 w-16 circle-4 animate-float delay-300">
+          <SiFastify className="h-10 w-10 text-purple-600 transition-colors duration-300 hover:text-purple-500" />
         </Container>
-        <Container className="h-16 w-16 circle-5">
-          <CSSLogo className="h-8 w-8 dark:text-white" />
+        <Container className="h-16 w-16 circle-5 animate-float delay-400">
+          <SiExpress className="h-10 w-10 text-gray-700 transition-colors duration-300 hover:text-gray-600" />
         </Container>
-        <Container className="h-12 w-12 circle-2">
-          <CLogo className="h-6 w-6 " />
+        <Container className="h-16 w-16 circle-6 animate-float delay-500">
+          <SiMongodb className="h-10 w-10 text-green-600 transition-colors duration-300 hover:text-green-500" />
         </Container>
-        <Container className="h-12 w-12 circle-7">
-          <TAILWINDCSSLogo className="h-6 w-6 " />
+        <Container className="h-16 w-16 circle-7 animate-float delay-600">
+          <SiSqlite className="h-10 w-10 text-blue-600 transition-colors duration-300 hover:text-blue-500" />
         </Container>
-      </div>
-      <div className="h-40 w-px absolute top-20 m-auto z-40 bg-gradient-to-b from-transparent via-cyan-500 to-transparent animate-move">
-        <div className="w-10 h-32 top-1/2 -translate-y-1/2 absolute -left-10">
-          <Sparkles />
-        </div>
+        <Container className="h-16 w-16 circle-8 animate-float delay-700">
+          <SiDocker className="h-10 w-10 text-blue-500 transition-colors duration-300 hover:text-blue-400" />
+        </Container>
+        <Container className="h-16 w-16 circle-9 animate-float delay-800">
+          <SiVercel className="h-10 w-10 text-white transition-colors duration-300 hover:text-gray-700 dark:hover:text-gray-300" />
+        </Container>
+        <Container className="h-16 w-16 circle-10 animate-float delay-900">
+          <SiTypescript className="h-10 w-10 text-blue-700 transition-colors duration-300 hover:text-blue-600" />
+        </Container>
+        <Container className="h-16 w-16 circle-11 animate-float delay-1000">
+          <SiCplusplus className="h-10 w-10 text-blue-600 transition-colors duration-300 hover:text-blue-500" />
+        </Container>
+        <Container className="h-16 w-16 circle-12 animate-float delay-1100">
+          <SiSupabase className="h-10 w-10 text-green-500 transition-colors duration-300 hover:text-green-400" />
+        </Container>
       </div>
     </div>
   );
 };
-const Sparkles = () => {
-  const randomMove = () => Math.random() * 2 - 1;
-  const randomOpacity = () => Math.random();
-  const random = () => Math.random();
-  return (
-    <div className="absolute inset-0">
-      {[...Array(30)].map((_, i) => (
-        <motion.span
-          key={`star-${i}`}
-          animate={{
-            top: `calc(${random() * 100}% + ${randomMove()}px)`,
-            left: `calc(${random() * 100}% + ${randomMove()}px)`,
-            opacity: randomOpacity(),
-            scale: [1, 1.2, 0],
-          }}
-          transition={{
-            duration: random() * 2 + 4,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-          style={{
-            position: "absolute",
-            top: `${random() * 100}%`,
-            left: `${random() * 100}%`,
-            width: `2px`,
-            height: `2px`,
-            borderRadius: "50%",
-            zIndex: 1,
-          }}
-          className="inline-block bg-black dark:bg-white"
-        ></motion.span>
-      ))}
-    </div>
-  );
-};
+
+// export default Skeleton;
+
 
 export const Card = ({ className, children }) => {
   return (
@@ -202,15 +172,20 @@ export const CardSkeletonContainer = ({
 const Container = ({ className, children }) => {
   return (
     <div
-      className={cn(
-        `h-16 w-16 rounded-full flex items-center justify-center bg-[rgba(248,248,248,0.01)]
-    shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]
-    `,
-        className
-      )}
-    >
-      {children}
-    </div>
+    className={`
+      flex items-center justify-center rounded-lg
+      bg-black dark:bg-gray-800
+      shadow-md
+      transition-transform duration-300 ease-in-out
+      transform
+      hover:scale-110 hover:shadow-xl
+      hover:-translate-y-1
+      cursor-pointer
+      ${className}
+    `}
+  >
+    {children}
+  </div>
   );
 };
 
@@ -334,139 +309,6 @@ export const MetaIconOutline = ({ className }) => {
     </svg>
   );
 };
-
-const JavaScriptLogo = () => (
-  <ion-icon
-    name="logo-nodejs"
-    class="w-[100px] h-[100px] text-[#c1ff3a]"
-  ></ion-icon>
-);
-
-const HTMLLogo = () => (
-  <ion-icon
-    name="logo-html5"
-    class="w-[100px] h-[100px] text-[#d85f37]"
-  ></ion-icon>
-);
-
-const CSSLogo = () => (
-  <ion-icon
-    name="logo-css3"
-    class="w-[100px] h-[100px] text-[#32bcde]"
-  ></ion-icon>
-);
-
-const ReactLogo = () => (
-  <ion-icon
-    name="logo-react"
-    class="w-[100px] h-[100px] text-[#2965f1]"
-  ></ion-icon>
-);
-
-const CLogo = () => (
-  <svg
-    version="1.1"
-    id="Layer_1"
-    xmlns="http://www.w3.org/2000/svg"
-    x="0px"
-    y="0px"
-    viewBox="0 0 109.19 122.88"
-    xmlSpace="preserve"
-  >
-    <style type="text/css">
-      {`
-        .st0 { fill-rule:evenodd; clip-rule:evenodd; fill:#3949AB; }
-        .st1 { fill-rule:evenodd; clip-rule:evenodd; fill:#283593; }
-        .st2 { fill-rule:evenodd; clip-rule:evenodd; fill:#5C6BC0; }
-        .st3 { fill-rule:evenodd; clip-rule:evenodd; fill:#FFFFFF; }
-      `}
-    </style>
-    <g>
-      <path
-        className="st0"
-        d="M107.81,92.16c0.86-1.48,1.39-3.16,1.39-4.66V35.38c0-1.5-0.53-3.17-1.39-4.66L54.6,61.44L107.81,92.16 L107.81,92.16L107.81,92.16z"
-      />
-      <path
-        className="st1"
-        d="M59.33,121.75l45.14-26.06c1.3-0.75,2.48-2.05,3.34-3.53L54.6,61.44L1.39,92.16c0.86,1.48,2.04,2.78,3.34,3.53 l45.14,26.06C52.47,123.25,56.72,123.25,59.33,121.75L59.33,121.75L59.33,121.75z"
-      />
-      <path
-        className="st2"
-        d="M107.81,30.72c-0.86-1.48-2.04-2.78-3.34-3.53L59.33,1.13c-2.6-1.5-6.86-1.5-9.46,0L4.73,27.19 C2.13,28.69,0,32.38,0,35.38V87.5c0,1.5,0.53,3.17,1.39,4.66L54.6,61.44L107.81,30.72L107.81,30.72L107.81,30.72z"
-      />
-      <path
-        className="st3"
-        d="M54.6,97.84c-20.07,0-36.4-16.33-36.4-36.4s16.33-36.4,36.4-36.4c12.95,0,25.03,6.97,31.52,18.19l-15.75,9.12 c-3.25-5.62-9.29-9.1-15.77-9.1c-10.04,0-18.2,8.16-18.2,18.2c0,10.03,8.16,18.2,18.2,18.2c6.48,0,12.52-3.49,15.77-9.1l15.75,9.12 C79.63,90.87,67.55,97.84,54.6,97.84L54.6,97.84L54.6,97.84z"
-      />
-    </g>
-  </svg>
-);
-
-const CPPLogo = () => (
-  <svg
-    version="1.1"
-    id="Layer_1"
-    xmlns="http://www.w3.org/2000/svg"
-    x="0px"
-    y="0px"
-    viewBox="0 0 109.19 122.88"
-    xmlSpace="preserve"
-  >
-    <style type="text/css">
-      {`
-        .st0 { fill-rule:evenodd; clip-rule:evenodd; fill:#3949AB; }
-        .st1 { fill-rule:evenodd; clip-rule:evenodd; fill:#283593; }
-        .st2 { fill-rule:evenodd; clip-rule:evenodd; fill:#5C6BC0; }
-        .st3 { fill-rule:evenodd; clip-rule:evenodd; fill:#FFFFFF; }
-      `}
-    </style>
-    <g>
-      <path
-        className="st0"
-        d="M107.81,92.16c0.86-1.48,1.39-3.16,1.39-4.66V35.38c0-1.5-0.53-3.17-1.39-4.66L54.6,61.44L107.81,92.16 L107.81,92.16z"
-      />
-      <path
-        className="st1"
-        d="M59.33,121.75l45.14-26.06c1.3-0.75,2.48-2.05,3.34-3.53L54.6,61.44L1.39,92.16c0.86,1.48,2.04,2.78,3.34,3.53 l45.14,26.06C52.47,123.26,56.73,123.26,59.33,121.75L59.33,121.75z"
-      />
-      <path
-        className="st2"
-        d="M107.81,30.72c-0.86-1.48-2.04-2.78-3.34-3.53L59.33,1.13c-2.6-1.5-6.86-1.5-9.46,0L4.73,27.19 C2.13,28.69,0,32.37,0,35.38V87.5c0,1.5,0.53,3.17,1.39,4.66L54.6,61.44L107.81,30.72L107.81,30.72z"
-      />
-      <path
-        className="st3"
-        d="M54.6,97.84c-20.07,0-36.4-16.33-36.4-36.4c0-20.07,16.33-36.4,36.4-36.4c12.95,0,25.03,6.97,31.52,18.19 l-15.75,9.12c-3.25-5.62-9.29-9.1-15.77-9.1c-10.04,0-18.2,8.16-18.2,18.2c0,10.03,8.16,18.2,18.2,18.2 c6.48,0,12.52-3.49,15.77-9.1l15.75,9.12C79.63,90.87,67.55,97.84,54.6,97.84L54.6,97.84z"
-      />
-      <polygon
-        className="st3"
-        points="91,59.42 86.95,59.42 86.95,55.37 82.91,55.37 82.91,59.42 78.86,59.42 78.86,63.46 82.91,63.46 82.91,67.51 86.95,67.51 86.95,63.46 91,63.46 91,59.42"
-      />
-      <polygon
-        className="st3"
-        points="106.16,59.42 102.12,59.42 102.12,55.37 98.07,55.37 98.07,59.42 94.03,59.42 94.03,63.46 98.07,63.46 98.07,67.51 102.12,67.51 102.12,63.46 106.16,63.46 106.16,59.42"
-      />
-    </g>
-  </svg>
-);
-
-const TAILWINDCSSLogo = () => (
-  <svg
-    id="Layer_1"
-    data-name="Layer 1"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 122.88 73.29"
-  >
-    <defs>
-      <style>{`.cls-1{fill:#06b6d4;fill-rule:evenodd;}`}</style>
-    </defs>
-    <title>tailwind-css</title>
-    <path
-      className="cls-1"
-      d="M61.44,0Q36.87,0,30.72,24.43q9.22-12.21,21.5-9.16c4.68,1.16,8,4.53,11.72,8.26,6,6.08,13,13.11,28.22,13.11q24.57,0,30.72-24.43-9.21,12.22-21.5,9.16c-4.68-1.16-8-4.53-11.72-8.26C83.64,7,76.67,0,61.44,0ZM30.72,36.64Q6.15,36.64,0,61.07q9.23-12.21,21.5-9.16c4.68,1.16,8,4.53,11.72,8.27,6,6.07,13,13.11,28.22,13.11q24.57,0,30.72-24.43Q82.95,61.07,70.66,58c-4.68-1.16-8-4.53-11.72-8.26-6-6.08-13-13.12-28.22-13.12Z"
-    />
-  </svg>
-);
-
 const GithubLogo = () => (
   <ion-icon class="text-white w-[2rem]" name="logo-github"></ion-icon>
 );
