@@ -27,7 +27,7 @@ export function MeteorsDemo() {
               SQLite or other databases. I enjoy solving real-world problems with scalable and elegant code.
             </p>
 
-            <div className="flex gap-4 mt-8">
+            <div className="flex gap-4 mt-8 justify-center">
               <MovingBorderDemo content={"📬 Contact Me"} flag={1} />
               <MovingBorderDemo content={"🚀 See Projects"} flag={0} />
             </div>
