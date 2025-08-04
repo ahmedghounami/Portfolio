@@ -5,6 +5,7 @@ import Cub from "../assets/cub.png";
 import Mini from "../assets/mini.png";
 import incep from "../assets/inception.jpg";
 import webser from "../assets/webserv.png";
+import aivita from "../assets/aivita.png";
 
 import { motion } from "framer-motion";
 
@@ -52,10 +53,10 @@ export default function Projects() {
           description="HTTP Server is a project that allows you to create a simple HTTP server that can handle basic requests and responses."
         />
         <AnimatedPinDemo
-          pic="https://www.thesslstore.com/blog/wp-content/uploads/2021/05/client-authentication-certificate-feature.jpg"
-          destination="https://github.com/ahmedghounami/authentification"
-          title="Authentification"
-          description="This project is a simple authentication system that allows users to register and log in securely."
+          pic={aivita}
+          destination="https://github.com/ahmedghounami/aivita"
+          title="aivita"
+          description="aivita is an AI-powered fitness and nutrition web app that generates personalized daily workout and meal plans based on user goals."
         />
         <AnimatedPinDemo
           pic="https://t4.ftcdn.net/jpg/05/62/79/67/360_F_562796726_v3vZjEugS2tibKNprK4nVQ1O7wAWs9Yy.jpg"
