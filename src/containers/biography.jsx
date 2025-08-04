@@ -26,19 +26,12 @@ export default function Biography() {
             <p className="font-extralight">Ahmed Ghounami</p>
           </ul>
           <ul className="flex gap-24 mx-2 list-disc justify-between pl-4 pb-[1.5rem] pt-[2rem] border-b-2 border-[#848282]">
-            <li className="font-extrabold text-[#1DBAD5]">Age</li>
-            <p className="font-extralight">21 Years</p>
-          </ul>
-          <ul className="flex gap-24 mx-2 list-disc justify-between pl-4 pb-[1.5rem] pt-[2rem] border-b-2 border-[#848282]">
-            <li className="font-extrabold text-[#1DBAD5]">Birdthay</li>
-            <p className="font-extralight">11, October 2003</p>
-          </ul>
-        </ul>
-        <ul className="flex flex-col">
-          <ul className="flex gap-24 mx-2 list-disc justify-between pl-4 pb-[1.5rem] pt-[2rem] border-b-2 border-[#848282]">
             <li className="font-extrabold text-[#1DBAD5]">Email</li>
             <p className="font-extralight">ahmedghounami0@gmail.com</p>
           </ul>
+        </ul>
+        <ul className="flex flex-col">
+          
           <ul className="flex gap-24 mx-2 list-disc justify-between pl-4 pb-[1.5rem] pt-[2rem] border-b-2 border-[#848282]">
             <li className="font-extrabold text-[#1DBAD5]">Phone</li>
             <p className="font-extralight">+212 620399298</p>
